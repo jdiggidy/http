@@ -6,7 +6,7 @@ let package = Package(
     name: "SwiftServerHTTP",
     targets: [
         .target(name: "CHTTPParser"),
-        .target(name: "HTTP", dependencies: [.Target(name: "CHTTPParser")]),
+        .target(name: "HTTP", dependencies: [.target(name: "CHTTPParser")]),
     ]
 )
 
