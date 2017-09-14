@@ -1,12 +1,12 @@
-// swift-tools-version:3.1
+// swift-tools-version:4.0
 
 import PackageDescription
 
 let package = Package(
     name: "SwiftServerHTTP",
     targets: [
-        Target(name: "CHTTPParser"),
-        Target(name: "HTTP", dependencies: [.Target(name: "CHTTPParser")]),
+        .target(name: "CHTTPParser"),
+        .target(name: "HTTP", dependencies: [.Target(name: "CHTTPParser")]),
     ]
 )
 
